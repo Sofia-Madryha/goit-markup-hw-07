@@ -75,7 +75,9 @@
       <section class="title">
         <div class="container">
           <h1 class="text-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button btn-order" data-modal-open >Order Service</button>
+          <button type="button" class="button btn-order" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section id="about" class="about">
@@ -139,18 +141,34 @@
           <ul class="services-list list">
             <li class="services-list-img">
               <img
-                src="./images/services/img1.jpg"
+              srcset="
+              ./images/services/img1.jpg   1x,
+              ./images/services/img1@2x.jpg 2x
+            "
+            src="./images/services/img1@2x.jpg"
                 alt="programming"
                 width="360"
               />
             </li>
             <li class="services-list-img">
-              <img src="./images/services/img2.jpg" alt="design" width="360" />
+              <img
+              srcset="
+              ./images/services/img2.jpg   1x,
+              ./images/services/img2@2x.jpg 2x
+            "
+            src="./images/services/img2@2x.jpg"
+                alt="programming"
+                width="360"
+              />
             </li>
             <li class="services-list-img">
               <img
-                src="./images/services/img3.jpg"
-                alt="graphic design"
+              srcset="
+              ./images/services/img3.jpg   1x,
+              ./images/services/img3@2x.jpg 2x
+            "
+            src="./images/services/img3@2x.jpg"
+                alt="programming"
                 width="360"
               />
             </li>
@@ -163,8 +181,12 @@
           <ul class="card-team-list list">
             <li class="card-team-item">
               <img
-                src="./images/our-team/img1.jpg"
-                alt="Product Designer"
+                srcset="
+                  ./images/our-team/desktop/img1.jpg    1x,
+                  ./images/our-team/desktop/img1@2x.jpg 2x
+                "
+                src="./images/our-team/desktop/img1.jpg"
+                alt="photo"
                 width="264"
               />
               <div class="worker">
@@ -220,8 +242,12 @@
             </li>
             <li class="card-team-item">
               <img
-                src="./images/our-team/img2.jpg"
-                alt="Frontend Developer"
+                srcset="
+                  ./images/our-team/desktop/img2.jpg    1x,
+                  ./images/our-team/desktop/img2@2x.jpg 2x
+                "
+                src="./images/our-team/desktop/img2.jpg"
+                alt="photo"
                 width="264"
               />
               <div class="worker">
@@ -277,8 +303,12 @@
             </li>
             <li class="card-team-item">
               <img
-                src="./images/our-team/img3.jpg"
-                alt="Marketing"
+                srcset="
+                  ./images/our-team/desktop/img3.jpg    1x,
+                  ./images/our-team/desktop/img3@2x.jpg 2x
+                "
+                src="./images/our-team/desktop/img3.jpg"
+                alt="photo"
                 width="264"
               />
               <div class="worker">
@@ -334,8 +364,12 @@
             </li>
             <li class="card-team-item">
               <img
-                src="./images/our-team/img4.jpg"
-                alt="UI Designer"
+                srcset="
+                  ./images/our-team/desktop/img4.jpg    1x,
+                  ./images/our-team/desktop/img4@2x.jpg 2x
+                "
+                src="./images/our-team/desktop/img4.jpg"
+                alt="photo"
                 width="264"
               />
               <div class="worker">
@@ -457,28 +491,44 @@
           <p class="footer-title">Social media</p>
           <ul class="socials socials-footer list">
             <li class="socials-item">
-              <a class="socials-link socials-link-footer link" href="" aria-label="Instagram icon">
+              <a
+                class="socials-link socials-link-footer link"
+                href=""
+                aria-label="Instagram icon"
+              >
                 <svg class="socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials-item">
-              <a class="socials-link socials-link-footer link" href="" aria-label="Twitter icon">
+              <a
+                class="socials-link socials-link-footer link"
+                href=""
+                aria-label="Twitter icon"
+              >
                 <svg class="socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials-item">
-              <a class="socials-link socials-link-footer link" href="" aria-label="Facebook icon">
+              <a
+                class="socials-link socials-link-footer link"
+                href=""
+                aria-label="Facebook icon"
+              >
                 <svg class="socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials-item">
-              <a class="socials-link socials-link-footer link" href="" aria-label="linkedin icon">
+              <a
+                class="socials-link socials-link-footer link"
+                href=""
+                aria-label="linkedin icon"
+              >
                 <svg class="socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
@@ -486,15 +536,20 @@
             </li>
           </ul>
         </div>
-        <div class="footer-input"> 
-          <p class="footer-title ">Subscribe</p>
+        <div class="footer-input">
+          <p class="footer-title">Subscribe</p>
           <form name="footer-form" class="footer-form">
             <div class="footer-form-wrapper">
-              
               <label class="footer-form-field">
-                <input class="footer-form-input" type="text" name="user_email" placeholder="E-mail" />
+                <input
+                  class="footer-form-input"
+                  type="text"
+                  name="user_email"
+                  placeholder="E-mail"
+                />
               </label>
-              <button class="btn-footer button" type="submit"><span class="btn-footer-text">Subscribe</span>
+              <button class="btn-footer button" type="submit">
+                <span class="btn-footer-text">Subscribe</span>
                 <svg class="footer-form-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-subscribe"></use>
                 </svg>
@@ -598,7 +653,7 @@
             </a>
           </li>
           <li>
-            <a class="link adress-menu-email " href="mailto:info@devstudio.com"
+            <a class="link adress-menu-email" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
@@ -606,51 +661,36 @@
       </address>
       <div class="socials-menu-modal">
         <ul class="socials-menu-list list">
-        <li class="socials-item">
-          <a
-            class="socials-link link"
-            href=""
-            aria-label="Instagram icon "
-          >
-            <svg class="socials-icon" width="16" height="16">
-              <use href="./images/icons.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a
-            class="socials-link link"
-            href=""
-            aria-label="Twitter icon"
-          >
-            <svg class="socials-icon" width="16" height="16">
-              <use href="./images/icons.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a
-            class="socials-link link"
-            href=""
-            aria-label="Facebook icon"
-          >
-            <svg class="socials-icon" width="16" height="24">
-              <use href="./images/icons.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a
-            class="socials-link link"
-            href=""
-            aria-label="linkedin icon"
-          >
-            <svg class="socials-icon" width="16" height="16">
-              <use href="./images/icons.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul></div>
+          <li class="socials-item">
+            <a class="socials-link link" href="" aria-label="Instagram icon ">
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link link" href="" aria-label="Twitter icon">
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link link" href="" aria-label="Facebook icon">
+              <svg class="socials-icon" width="16" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link link" href="" aria-label="linkedin icon">
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/modal-menu.js/modal-menu.js"></script>
