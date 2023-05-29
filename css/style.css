@@ -92,6 +92,7 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
+  
 }
 
 .header-nav-menu {
@@ -113,7 +114,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
-  margin-right: 76px;
+  
 }
 .logo-part {
   color: var(--main-font-color);
@@ -123,13 +124,9 @@ body {
     margin-right: 120px;
   }
 }
-@media only screen and (min-width: 1158px) {
-  .logo {
-    padding: 24px 16px;
-  }
-}
+
 .menu-toggle {
-  min-height: 40px;
+  min-height: 22px;
   min-width: 40px;
   display: flex;
   align-items: center;
@@ -165,9 +162,16 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 80px 0 40px 40px;
+ 
+  z-index: 999;
+  background-color: #ffffff;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
   background: var(--main-light-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -197,7 +201,7 @@ body {
   padding: 0px;
   gap: 40px;
   list-style: none;
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 
 .mobile-menu .link {
@@ -214,13 +218,19 @@ body {
 .mobile-menu .mobile-focus-link {
   color: var(--accent-color);
 }
+.adress-menu{
+ 
+}
 .adress-menu-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+ 
   padding: 0px;
-  gap: 40px;
-  margin-bottom: 48px;
+  display: block;
+    margin-bottom: 48px;
+    padding: 0px;
+
+}
+.adress-menu-item{
+  margin-bottom: 40px;
 }
 .adress-menu-phone {
   font-weight: 700;
@@ -229,6 +239,7 @@ body {
   letter-spacing: 0.02em;
   font-style: normal;
   color: var(--logo-color);
+
 }
 .adress-menu-email {
   font-style: normal;
@@ -529,7 +540,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .about-list-item {
-    width: 326px;
+    width: calc((100% - 24px) / 2);
     font-weight: 500;
     text-align: start;
   }
@@ -891,6 +902,7 @@ body {
   display: inline-block;
   margin-bottom: 16px;
   margin-right: 0px;
+  padding: 0;
 }
 .logo-part-footer {
   color: var(--light-font-color);
@@ -944,6 +956,9 @@ body {
     gap: 24px;
   }
 }
+.footer-form-field{
+  margin-bottom: 16px;
+}
 .footer-form-input {
   width: 100%;
   height: 40px;
@@ -953,7 +968,7 @@ body {
   border: 1px solid var(--main-light-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-bottom: 16px;
+  
 }
 @media only screen and (min-width: 768px) {
   .footer-form-input {
@@ -1118,6 +1133,7 @@ footer-form-icon {
   padding-left: 38px;
   color: var(--main-font-color);
   font-size: 12px;
+  
 }
 .form-field,
 .form-comment:focus {

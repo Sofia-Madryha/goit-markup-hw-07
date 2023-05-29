@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&amp;family=Roboto:wght@400;500;700;900&amp;display=swap"
       rel="stylesheet"
     />
     <link
@@ -540,14 +540,16 @@
           <p class="footer-title">Subscribe</p>
           <form name="footer-form" class="footer-form">
             <div class="footer-form-wrapper">
-              <label class="footer-form-field">
-                <input
-                  class="footer-form-input"
-                  type="text"
-                  name="user_email"
-                  placeholder="E-mail"
-                />
-              </label>
+              <div class="footer-form-field">
+                <label class="footer-form-label">
+                  <input
+                    class="footer-form-input"
+                    type="text"
+                    name="user_email"
+                    placeholder="E-mail"
+                  />
+                </label>
+              </div>
               <button class="btn-footer button" type="submit">
                 <span class="btn-footer-text">Subscribe</span>
                 <svg class="footer-form-icon" width="24" height="24">
@@ -645,20 +647,20 @@
         <li><a href="" class="link">Portfolio</a></li>
         <li><a href="" class="link">Contacts</a></li>
       </ul>
-      <address class="adress-menu">
+     
         <ul class="adress-menu-list list">
-          <li>
+          <li class="adress-menu-item">
             <a class="link adress-menu-phone" href="tel:+110001111111"
               >+11 (000) 111-11-11
             </a>
           </li>
-          <li>
+          <li >
             <a class="link adress-menu-email" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
         </ul>
-      </address>
+  
       <div class="socials-menu-modal">
         <ul class="socials-menu-list list">
           <li class="socials-item">
